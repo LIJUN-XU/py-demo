@@ -82,10 +82,11 @@ print(line)
 # Using the with statement is generally preferred over directly using open() because it ensures that the file is properly saved and closed after the block of code is executed. This helps to avoid resource leaks and makes the code more readable.
 # if you're not using the with keywors,then you should call f.close() to close the file and immediately free up any system resources used by it.
 # 打开一个文件
-f = open("./test.txt", "a+") # w+
+f = open("./test.txt", "r+") # w+
 
 # with open("./test.txt", "w") as f:
   # f.write("这是一个测试文件，用于测试文件读写的功能。")
+# r+ 虽然光标是从文件开头开始输入数据，但是，它会把原来的数据覆盖，输入多少覆盖多少
 
 f.write( "Python 是一个非s常好w的d语w言。\n是的，的确非常好!!\n" )
 
